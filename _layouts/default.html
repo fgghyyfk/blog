@@ -1,12 +1,58 @@
 <!DOCTYPE html>
-　　<html>
-　　<head>
-    　　　　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    　　　　<title>{{ page.title }}</title>
-    　　</head>
-　　<body>
+<html dir="ltr" lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="baidu-site-verification" content="bzrF1LZKUC" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="前端路，向前行" />
+    <meta name="keywords" content="html5,css3,angular,nodejs" />
+    <title>{{ page.title }}</title>
+    <link href="/css/screen.css" rel="stylesheet" />
+</head>
 
-　　　　{{ content }}
-
-　　</body>
-　　</html>
+<body>
+<!--=S header -->
+<div id="header" class="shadow">
+    <div class="logo"> <a href="/" title="本博客是一个分享javascript,jQuery,html5,css3前端开发技术博客,实时关注最新的web前端开发技术,web前端开发工具,web前端用户体验。" class="logo-wrap"><span class="blogname">阿吉的博客</span> <span class="describe">关注前端、用户体验</span></a> </div>
+    <div class="menu">
+        <ul id="nav" class="nav">
+            <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-389"><a title="首页" href="/">首页</a></li>
+        </ul>
+    </div>
+    <div class="contact"> <a href="http://weibo.com/ajiblog" class="weibo" target="_blank" title="阿吉的微博">阿吉的微博</a> <a href="https://github.com/fgghyyfk" class="github" target="_blank" title="阿吉的Github">阿吉的Github</a> <a href="mailto:fgghyyfk@gmail.com" class="email" title="阿吉的邮箱">阿吉的邮箱</a> </div>
+</div>
+<!--=E header -->
+<!--=S search -->
+<div id="search" class="shadow">
+    <form action="/e/search/index.php" method="post" name="sform" id="sform">
+        <input type="hidden" name="show" value="title" />
+        <input type="hidden" name="classid" value="3" />
+        <input type="text"  name="keyboard" class="search-text" />
+        <button type="submit" class="search-btn">搜索</button>
+</div>
+<!--=E search -->
+{{ content }}
+<!--=S footer -->
+<div id="footer">
+    <div class="footer-other clearfix">
+        <div class="footer-mod footer-about">
+            <h2 class="footer-mod-tit">关于我</h2>
+            <div class="footer-mod-con">中年大叔</div>
+        </div>
+        <div class="footer-mod footer-links clearfix">
+            <h2 class="footer-mod-tit">好友站点</h2>
+            <div class="footer-mod-con">
+                <ul>
+                    <li><a href="http://blog.gaoshou.org/" title="小志的博客" target="_blank">小志的博客</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-mod footer-tags clearfix">
+            <h2 class="footer-mod-tit">热门标签</h2>
+            <div class="footer-mod-con"> <a href='' class='tag-link-20' style='font-size: 14px;'>代码片段</a> </div>
+        </div>
+    </div>
+    <div class="footer-copyright clearfix"> <span class="copyright"></span></div>
+</div>
+</body>
+</html>
