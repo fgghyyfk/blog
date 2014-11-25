@@ -9,7 +9,7 @@ input,button,select,textarea{ outline:none;} textarea{ resize:none;}
 
 /* css spirit background
 -----------------------------------------------*/
-.search-btn,.weibo,.email,.github,.article-body ul li,.rss,.linkcat ul li{ background-image:url(。。/images/icons.png); background-repeat:no-repeat;}
+.search-btn,.weibo,.email,.github,.article-body ul li,.rss,.linkcat ul li{ background-image:url(../images/icons.png); background-repeat:no-repeat;}
 
 /* CSS3 animation
 -----------------------------------------------*/
