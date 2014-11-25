@@ -5,10 +5,10 @@ title: 阿吉的博客
 <div id="content">
     {% for post in site.posts %}
         <div class="article-list shadow">
-            <div class="article-title"> <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> </div>
+            <div class="article-title"> <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> </div>
             <div class="article-info"> 撰写于{{ post.date | date_to_string }}</div>
             <div class="article-body"></div>
-            <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}"class="readmore">阅读全文 »</a>
+            <a href="{{ post.url }}" title="{{ post.title }}"class="readmore">阅读全文 »</a>
         </div>
     {% endfor %}
 </div>
